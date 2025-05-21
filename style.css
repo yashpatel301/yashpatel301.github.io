@@ -509,10 +509,11 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.layer h3{
+.layer h2,
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .layer p {
@@ -1097,7 +1098,7 @@ nav .fas{
     height: 0%;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     backdrop-filter: blur(5px);
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1112,10 +1113,11 @@ nav .fas{
     transition: 0.5s;
 }
 
+.layer h2,
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .layer p {

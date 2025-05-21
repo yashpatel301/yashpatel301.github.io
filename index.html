@@ -19,7 +19,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#" onclick="toggleTheme()" class="theme-toggle"><i class="fas fa-moon"></i></a></li>
+                    <li><a href="#" class="theme-toggle"><i class="fas fa-sun"></i></a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -57,8 +57,8 @@
                 </div>
                 <div class="about-text">
                     <p>
-                    <b> Hi, I’m Yash — a curious mind fueled by data, driven by impact </b> <br> <br>
-                        From developing NLP and computer vision models to designing recommendation systems and exploring reinforcement learning, I’ve had the opportunity to work on diverse projects — across academia, corporate teams, and nonprofit spaces. Each experience has deepened my belief in the power of data to drive change and create meaningful user experiences.
+                    <b> Hi, I'm Yash — a curious mind fueled by data, driven by impact </b> <br> <br>
+                        From developing NLP and computer vision models to designing recommendation systems and exploring reinforcement learning, I've had the opportunity to work on diverse projects — across academia, corporate teams, and nonprofit spaces. Each experience has deepened my belief in the power of data to drive change and create meaningful user experiences.
                         <br> <br>
                         I thrive on turning complexity into clarity, love getting my hands dirty with SQL, Python, or PyTorch, and always stay eager to learn something new. Whether it's predicting customer behavior or optimizing decision pipelines, I enjoy bridging the gap between raw data and real-world impact.
                     </p>
@@ -447,12 +447,12 @@
             document.body.classList.toggle('dark-theme');
             const themeIcon = document.querySelector('.theme-toggle i');
             if (document.body.classList.contains('dark-theme')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'dark');
-            } else {
                 themeIcon.classList.remove('fa-sun');
                 themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
                 localStorage.setItem('theme', 'light');
             }
         }
@@ -463,8 +463,8 @@
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark-theme');
                 const themeIcon = document.querySelector('.theme-toggle i');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
             }
         });
     </script>
