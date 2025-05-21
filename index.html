@@ -16,64 +16,214 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" onclick="toggleTheme()" class="theme-toggle"><i class="fas fa-moon"></i></a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <h4>AI Engineer</h4>
-                <p>I am a <span> AI Engineer / Data Scientist </span> </br> passionate about building <span> ML and NLP </span></br> solutions that turn complex data into</br> meaningful outcomes.</p>
+            <div class="header-content">
+                <div class="profile-container">
+                    <img src="images/background.JPG" class="profile-img">
+                </div>
+                <div class="header-text">
+                    <h4 class="typing-text"></h4>
+                    <p>I am a <span> AI Engineer / Data Scientist </span> </br> passionate about building <span> ML and NLP </span></br> solutions that turn complex data into</br> meaningful outcomes.</p>
+                </div>
             </div>
+        </div>
+        <div class="animated-background">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
     
     <div id="about">   
         <div class="container">
-            <div class="row">
-                <div class="about-column-1">
-                    <img src = "images/prof_img1.jpg">
+            <!-- Top subsection with photo and text -->
+            <div class="about-top">
+                <div class="about-photo">
+                    <img src="images/prof_img1.jpg" alt="Profile Photo">
                 </div>
-                <div class="about-column-2">
-                    <h3 class="sub-title">Know Me!</h3>
+                <div class="about-text">
                     <p>
-                        A skilled data science and AI professional with experience spanning academic research, corporate projects, 
-                        and nonprofit initiatives. Adept at developing models for NLP, computer vision, and reinforcement learning, 
-                        with practical applications in recommendation engines and SQL parsing. Strong analytical background with a 
-                        proven track record of applying advanced techniques to solve real-world data problems. Passionate about 
-                        leveraging data to drive insights, build intelligent systems, and enhance user experiences across diverse domains.
+                    <b> Hi, I’m Yash — a curious mind fueled by data, driven by impact </b> <br> <br>
+                        From developing NLP and computer vision models to designing recommendation systems and exploring reinforcement learning, I’ve had the opportunity to work on diverse projects — across academia, corporate teams, and nonprofit spaces. Each experience has deepened my belief in the power of data to drive change and create meaningful user experiences.
+                        <br> <br>
+                        I thrive on turning complexity into clarity, love getting my hands dirty with SQL, Python, or PyTorch, and always stay eager to learn something new. Whether it's predicting customer behavior or optimizing decision pipelines, I enjoy bridging the gap between raw data and real-world impact.
                     </p>
+                </div>
+            </div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <!-- Horizontal line and subtitle -->
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <h2 class="section-subtitle">Education</h2>
+            </div>
+
+            <!-- Bottom subsection with education cards -->
+            <div class="education-sections">
+                <!-- Left education section -->
+                <div class="education-section">
+                    <div class="education-cards">
+                        <div class="education-card" onclick="showEducationDetails('msc')">
+                            <h3>MSc in Computer Science</h3>
+                            <h4>DePaul University, Chicago, USA</h4>
+                            <div class="education-details" id="msc-details">
+                                <h5>Course Work:</h5>
+                                <ul>
+                                    <li>Programmatic Machine Learning</li>
+                                    <li>Big Data Analytics</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Regression Analysis</li>
+                                </ul>
+                                <h5>Skills Gained:</h5>
+                                <ul>
+                                    <li>PyTorch</li>
+                                    <li>Large Language Models</li>
+                                    <li>Generative AI</li>
+                                    <li>RAG</li>                                    
+                                    <li>Statistical Analysis</li>
+                                    <li>Reinforcement Learning</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents active-tab" id="experience">
-                        <ul>
-                            <li><span>Research Assistant</span><br>DePaul University, Chicago, USA</li>
-                            <li><span>Data Intern - Summer</span><br>IQM Corporation, New York, USA</li>
-                            <li><span>Data Scientist</span><br>IQM Corporation, Ahmedabad, India</li>
-                            <li><span>Data Science Teaching Assistant</span><br> Ahmedabad University, Ahmedabad, India </li>
-                            <li><span>Data Analyst Volunteer</span><br>Etasha Society, Delhi, India</li>
-                        </ul>
+                </div>
+
+                <!-- Right education section -->
+                <div class="education-section">
+                    <div class="education-cards">
+                        <div class="education-card" onclick="showEducationDetails('btech')">
+                            <h3>BTech in Information and Communication Technology</h3>
+                            <h4>Ahmedabad University, Ahmedabad, India</h4>
+                            <div class="education-details" id="btech-details">
+                                <h5>Course Work:</h5>
+                                <ul>
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Database Management Systems</li>
+                                    <li>Computer Vision</li>
+                                    <li>Natural Language Processing</li>
+                                </ul>
+                                <h5>Skills Gained:</h5>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>Machine Learning</li>
+                                    <li>Neural Networks</li>
+                                    <li>Transfer Learning</li>
+                                    <li>TensorFlow</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>MSc in Computer Science</span><br>DePaul University, Chicago, USA</li>
-                            <li><span>BTech in Information and Communication Technology</span><br>Ahmedabad University, Ahmedabad, India</li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="timeline">
+                <!-- Latest Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr'24 - Dec'24</div>
+                        <div class="timeline-card">
+                            <h3>Research Assistant</h3>
+                            <h4>DePaul University, Chicago, USA</h4>
+                            <p>Optimized distributed resource allocation using reinforcement learning, enhancing real-time computing efficiency for thousands of concurrent users in research-driven networks.</p>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="skills">
-                        <ul>
-                            <li><span>Programming:</span><br>Python, C, Java, C++, R, SQL</li>
-                            <li><span>Databases:</span><br>PostgreSQL, Oracle, MySQL</li>
-                            <li><span>Frameworks:</span><br>Scikit-learn, PyTorch, Tensorflow, Matplotlib, <br> Seaborn, Langchain, Langgraph</li>
-                            <li><span>Technologies:</span><br> Machine Learning, Deep Learning, <br>EDA (Exploratory Data Analysis), NLP, <br>Computer Vision, 
-                                Generative AI, <br>Agentic AI, Data Visualization, Git </li>
-                            <li><span>Tools:</span><br>Github, Snowflake, AWS, PowerBI, Tableau</li>
-                        </ul>
+                    <div class="skill-cloud right">
+                        <div class="skill-bubble">Python</div>
+                        <div class="skill-bubble">Reinforcement Learning</div>
+                        <div class="skill-bubble">Fog Architecture</div>
+                        <div class="skill-bubble">Distributed Computing</div>
+                        <div class="skill-bubble">Optimization Algorithms</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="skill-cloud left">
+                        <div class="skill-bubble">AWS (QuickSight)</div>
+                        <div class="skill-bubble">RAG Architecture</div>
+                        <div class="skill-bubble">Langchain/Langgraph</div>
+                        <div class="skill-bubble">Bitbucket</div>
+                        <div class="skill-bubble">Tensorflow</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun'24 - Aug'24</div>
+                        <div class="timeline-card">
+                            <h3>Data Intern - Summer</h3>
+                            <h4>IQM Corporation, New York, USA</h4>
+                            <p>Built a custom query app using AWS QuickSight; achieved BLEU score of 88+ by refining SQL syntax with machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan'22 - Aug'23</div>
+                        <div class="timeline-card">
+                            <h3>Data Scientist</h3>
+                            <h4>IQM Corporation, Ahmedabad, India</h4>
+                            <p>Mapped 100K+ URL views to user IDs using cosine similarity, deployed BERT-based labeling pipeline, and led real-time ad recommendation strategy integration.</p>
+                        </div>
+                    </div>
+                    <div class="skill-cloud right">
+                        <div class="skill-bubble">NLP</div>
+                        <div class="skill-bubble">Python</div>
+                        <div class="skill-bubble">Fast APIs</div>
+                        <div class="skill-bubble">PyTorch</div>
+                        <div class="skill-bubble">Data Visualization</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="skill-cloud left">
+                        <div class="skill-bubble">Machine Learning</div>
+                        <div class="skill-bubble">Python</div>
+                        <div class="skill-bubble">Exploratory Data Analysis (EDA)</div>
+                        <div class="skill-bubble">Data Cleaning</div>
+                        <div class="skill-bubble">MS Excel</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct'21 - Dec'21</div>
+                        <div class="timeline-card">
+                            <h3>Data Science Teaching Assistant</h3>
+                            <h4>Ahmedabad University, Ahmedabad, India</h4>
+                            <p>Supported data science coursework and boosted student project success rates through practical mentoring and statistical tool guidance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan'21 - Mar'21</div>
+                        <div class="timeline-card">
+                            <h3>Data Analyst Volunteer</h3>
+                            <h4>Etasha Society, Delhi, India</h4>
+                            <p>Cleaned and analyzed nonprofit data, improving information reliability by 30% to better target vocational training for underserved communities.</p>
+                        </div>
+                    </div>
+                    <div class="skill-cloud right">
+                        <div class="skill-bubble">Data Analysis</div>
+                        <div class="skill-bubble">MS Excel</div>
+                        <div class="skill-bubble">Reporting</div>
+                        <div class="skill-bubble">Visualization</div>
+                        <div class="skill-bubble">Statistical Analysis</div>
                     </div>
                 </div>
             </div>
@@ -85,36 +235,60 @@
             <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/computer_vision_img.png">
-                    <div class="layer">
-                        <h3>
-                            Computer Vision Projects
-                        </h3>
-                        <p>Developed and applied transfer learning for neural style transfer with other five computer vision projects, 
-                            showcasing practical ML use in visual data analysis. </p>
-                        <a href="https://github.com/yashpatel301/Computer-Vision-Basics"><i class="fa-solid fa-square-up-right"></i></a>
+                    <div class="project-box">
+                        <div class="project-image">
+                            <img src="images/computer_vision_img.png">
+                            <div class="layer">
+                                <h2>Vision-Crafter</h2>
+                                <p>Developed and applied transfer learning for neural style transfer with other five computer vision projects, 
+                                    showcasing practical ML use in visual data analysis.</p>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <div class="project-skill-bubble">PyTorch</div>
+                            <div class="project-skill-bubble">Computer Vision</div>
+                            <div class="project-skill-bubble">Transfer Learning</div>
+                            <div class="project-skill-bubble">Neural Networks</div>
+                            <div class="project-skill-bubble">Python</div>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/qa-youtube.png">
-                    <div class="layer">
-                        <h3>
-                            QA-Youtube-Videos
-                        </h3>
-                        <p>This Streamlit app enables users to ask questions about YouTube videos by analyzing their transcripts using OpenAI's 
-                            GPT-3.5 model. </p>
-                            <a href="https://github.com/yashpatel301/QA-youtube-videos"><i class="fa-solid fa-square-up-right"></i></a>
+                    <div class="project-box">
+                        <div class="project-image">
+                            <img src="images/qa-youtube.png">
+                            <div class="layer">
+                                <h2>VidQuery</h2>
+                                <p>This Streamlit app enables users to ask questions about YouTube videos by analyzing their transcripts using OpenAI's 
+                                    GPT-3.5 model.</p>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <div class="project-skill-bubble">Streamlit</div>
+                            <div class="project-skill-bubble">OpenAI</div>
+                            <div class="project-skill-bubble">NLP</div>
+                            <div class="project-skill-bubble">Langchain/Langgraph</div>
+                            <div class="project-skill-bubble">RAG</div>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/molecular_image.png">
-                    <div class="layer">
-                        <h3>
-                            Molecular Communication
-                        </h3>
-                        <p>Designed and evaluated ANN and LSTM models for binary code prediction in a fluid medium, achieving 99.27% 
-                            accuracy with LSTM. LSTM outperformed ANN by 0.3% in accuracy. </p>
-                            <a href="https://github.com/yashpatel301/Molucular-Communication"><i class="fa-solid fa-square-up-right"></i></a>
+                    <div class="project-box">
+                        <div class="project-image">
+                            <img src="images/molecular_image.png">
+                            <div class="layer">
+                                <h2>Molecular-Communication</h2>
+                                <p>Designed and evaluated ANN and LSTM models for binary code prediction in a fluid medium, achieving 99.27% 
+                                    accuracy with LSTM. LSTM outperformed ANN by 0.3% in accuracy.</p>
+                            </div>
+                        </div>
+                        <div class="project-skills">
+                            <div class="project-skill-bubble">LSTM</div>
+                            <div class="project-skill-bubble">ANN</div>
+                            <div class="project-skill-bubble">Deep Learning</div>
+                            <div class="project-skill-bubble">TensorFlow</div>
+                            <div class="project-skill-bubble">Data Preprocessing</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,6 +372,101 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <script>
+        // Continuous typing animation with two titles
+        const texts = ["AI Engineer", "Data Scientist"];
+        const typingText = document.querySelector('.typing-text');
+        let textIndex = 0;
+        let isDeleting = false;
+        let currentText = '';
+        let typingSpeed = 100;
+
+        function typeWriter() {
+            const currentFullText = texts[textIndex];
+            
+            if (isDeleting) {
+                // Erasing text
+                currentText = currentFullText.substring(0, currentText.length - 1);
+                typingSpeed = 50;
+            } else {
+                // Typing text
+                currentText = currentFullText.substring(0, currentText.length + 1);
+                typingSpeed = 100;
+            }
+
+            typingText.textContent = currentText;
+
+            // If typing is complete
+            if (!isDeleting && currentText === currentFullText) {
+                // Pause at the end
+                typingSpeed = 2000;
+                isDeleting = true;
+            } 
+            // If erasing is complete
+            else if (isDeleting && currentText === '') {
+                isDeleting = false;
+                // Switch to next text
+                textIndex = (textIndex + 1) % texts.length;
+                // Pause before starting again
+                typingSpeed = 500;
+            }
+
+            setTimeout(typeWriter, typingSpeed);
+        }
+
+        // Start typing animation when page loads
+        window.addEventListener('load', () => {
+            typingText.textContent = '';
+            typeWriter();
+        });
+    </script>
+
+    <script>
+        function showEducationDetails(id) {
+            const details = document.getElementById(id + '-details');
+            
+            // Toggle only the clicked details
+            if (details.classList.contains('active')) {
+                details.classList.remove('active');
+            } else {
+                // First hide all details
+                document.querySelectorAll('.education-details').forEach(detail => {
+                    detail.classList.remove('active');
+                });
+                // Then show the clicked one
+                details.classList.add('active');
+            }
+        }
+    </script>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const themeIcon = document.querySelector('.theme-toggle i');
+            if (document.body.classList.contains('dark-theme')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference
+        window.addEventListener('load', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                const themeIcon = document.querySelector('.theme-toggle i');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        });
     </script>
 
 </body>
