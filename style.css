@@ -929,6 +929,7 @@ section {
         justify-content: center;
         transition: all var(--transition-normal);
         backdrop-filter: blur(20px);
+        z-index: 1001;
     }
     
     .nav-menu.active {
@@ -938,12 +939,31 @@ section {
     .mobile-menu-toggle {
         display: block;
         position: static;
+        z-index: 1002;
     }
     
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--space-xl);
+        padding-top: 80px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .typing-text {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .hero-title {
+        text-align: center;
+    }
+    
+    .hero-description {
+        text-align: center;
     }
     
     .about-content {
