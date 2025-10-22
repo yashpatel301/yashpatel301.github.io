@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function initThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
-    
+
     // Set default theme (dark)
     if (!localStorage.getItem('theme')) {
         localStorage.setItem('theme', 'dark');
     }
-    
+
     // Apply stored theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -31,7 +31,7 @@ function initThemeToggle() {
         body.classList.remove('light-theme');
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
-    
+
     // Toggle theme on click
     themeToggle.addEventListener('click', function() {
         body.classList.toggle('light-theme');
@@ -161,7 +161,7 @@ function initScrollAnimations() {
     
     // Observe elements for animation
     const animatedElements = document.querySelectorAll(
-        '.section-title, .about-content, .education-card, .timeline-item, .project-card, .contact-content'
+        '.section-title, .about-content, .education-card, .timeline-item, .project-item-compact, .contact-content'
     );
     
     animatedElements.forEach(el => {
@@ -435,7 +435,7 @@ document.querySelectorAll('img').forEach(img => {
         this.style.display = 'none';
         console.warn(`Failed to load image: ${this.src}`);
     });
-});
+}); 
 
 // Console welcome message
 console.log(`
