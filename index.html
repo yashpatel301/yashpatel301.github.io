@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Patel - AI Engineer & Data Scientist</title>
-    <meta name="description" content="AI Engineer and Data Scientist passionate about building ML and NLP solutions that turn complex data into meaningful outcomes.">
+    <title>Yash Patel | Data Scientist</title>
+    <meta name="description" content="Data Scientist specializing in machine learning, NLP, computer vision, and production AI systems.">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8b253e31f3.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Modern Navigation -->
     <nav id="navbar">
         <div class="nav-container">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#header" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#header" class="nav-link active">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -25,323 +28,305 @@
                     </button>
                 </li>
             </ul>
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="header">
-        <div class="hero-background"></div>
+    <section id="header" class="intro-section">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Yash Patel</h1>
-                    <div class="typing-text" id="typing-text">
-                        <span id="typing-content"></span>
-                        <span class="typing-cursor">|</span>
-                    </div>
-                    <p class="hero-description">
-                        I am a passionate <strong>AI Engineer & Data Scientist</strong> focused on building 
-                        innovative ML and NLP solutions that transform complex data into meaningful outcomes. 
-                        I love creating intelligent systems that make a real impact.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-code"></i>
-                            View My Work
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i>
-                            Get In Touch
-                        </a>
+            <div class="intro-grid">
+                <div class="intro-about-wrap">
+                    <p class="about-label">ABOUT ME</p>
+                    <div class="intro-about">
+                        <h2 class="about-heading">Hi, I'm Yash, a curious mind fueled by data, driven by impact</h2>
+                        <p>
+                            Over the last few years, I have moved through quite a spectrum. From corporate teams with structure, scrappy startup days where "everything" meant everything and research labs chasing the next algorithm. Somewhere in between, I have been the data guy, the ML guy and sometimes even the "make-it-work" DevOps guy.
+                        </p>
+                        <p>
+                            I have seen the arc of this field firsthand, from training traditional deep learning models, to experimenting with transfer learning and now shaping things with LLMs and agentic workflows. Each phase has been less about chasing trends and more about learning. For me, the fun is in that mix: figuring out how new advancements can be foundations for solving current industrial problems, while keeping the process as practical (and human) as possible.
+                        </p>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <img src="images/background.JPG" alt="Yash Patel" class="profile-image">
+                <div class="intro-primary">
+                    <div class="intro-photo-wrap">
+                        <img src="images/background.JPG" alt="Yash Patel" class="intro-photo">
+                    </div>
+                    <h1 class="intro-name">Yash Patel</h1>
+                    <p class="hero-kicker">Data Scientist</p>
+                    <p class="intro-summary">
+                        Machine learning · NLP · Generative AI · Language Models · Computer Vision · Statistical Modeling · Efficient System Design
+                    </p>
+                    <div class="hero-metadata">
+                        <span><i class="fas fa-location-dot"></i> California, USA</span>
+                        <span><i class="fas fa-handshake"></i> let's collaborate</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#experience" class="btn btn-primary">View Experience</a>
+                        <a href="images/Yash Patel Resume.docx" class="btn btn-secondary" download>Download Resume</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="skills">
         <div class="container">
             <div class="section-title">
-                <h2>About Me</h2>
+                <h2>Core Skills</h2>
             </div>
-            
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/prof_img1.jpg" alt="Yash Patel Professional Photo">
+            <div class="skills-showcase">
+                <article class="skill-group skill-pos-1">
+                    <h3>Programming</h3>
+                    <p>Python, R, SQL, Java</p>
+                </article>
+                <article class="skill-group skill-pos-2">
+                    <h3>ML and AI</h3>
+                    <p>PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, LangGraph</p>
+                </article>
+                <div class="skills-cloud" aria-label="Floating AI stack cloud">
+                    <span class="cloud-tag c1"><i class="fab fa-python"></i>Python</span>
+                    <span class="cloud-tag c2"><i class="fas fa-brain"></i>TensorFlow</span>
+                    <span class="cloud-tag c3"><i class="fas fa-fire"></i>PyTorch</span>
+                    <span class="cloud-tag c4"><i class="fas fa-database"></i>SQL</span>
+                    <span class="cloud-tag c5"><i class="fab fa-java"></i>Java</span>
+                    <span class="cloud-tag c6"><i class="fas fa-link"></i>LangChain</span>
+                    <span class="cloud-tag c7"><i class="fab fa-aws"></i>AWS</span>
+                    <span class="cloud-tag c8"><i class="fab fa-docker"></i>Docker</span>
+                    <span class="cloud-tag c9"><i class="fas fa-server"></i>PostgreSQL</span>
+                    <span class="cloud-tag c10"><i class="fas fa-chart-line"></i>Tableau</span>
+                    <span class="cloud-tag c11"><i class="fas fa-snowflake"></i>Snowflake</span>
+                    <span class="cloud-tag c12"><i class="fas fa-robot"></i>NLP</span>
                 </div>
-                <div class="about-text">
-                    <h3>Hi, I'm Yash, a curious mind fueled by data, driven by impact</h3>
-                    <p>
-                        Over the last few years, I've moved through quite a spectrum. From corporate teams with structure, 
-                        scrappy startup days where "everything" meant everything, and research labs chasing the next algorithm. 
-                        Somewhere in between, I've been the data guy, the ML guy, and sometimes even the "make-it-work" DevOps guy.
-                    </p>
-                    <p>
-                        I've seen the arc of this field firsthand, from training traditional deep learning models, to 
-                        experimenting with transfer learning, and now shaping things with LLMs and agentic workflows. Each phase 
-                        has been less about chasing trends and more about learning. For me, the fun is in that mix: figuring 
-                        out how new advancements can be foundations for solving real-world problems, while keeping the process 
-                        as practical (and human) as possible.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="section-title" style="margin-top: 4rem;">
-                <h2>Education</h2>
-            </div>
-            
-            <div class="education-grid">
-                <div class="education-card" onclick="toggleEducation('msc')">
-                    <h3>MSc in Computer Science</h3>
-                    <h4>DePaul University, Chicago, USA</h4>
-                    <div class="education-details" id="msc-details">
-                        <div class="education-section-bubble">
-                            <h5>Course Work</h5>
-                            <p>Programmatic Machine Learning, Big Data Analytics, Artificial Intelligence, Regression Analysis</p>
-                        </div>
-                        <div class="education-section-bubble">
-                            <h5>Skills Gained</h5>
-                            <p>PyTorch, Large Language Models, Generative AI, RAG, Statistical Analysis, Reinforcement Learning</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="education-card" onclick="toggleEducation('btech')">
-                    <h3>BTech in Information and Communication Technology</h3>
-                    <h4>Ahmedabad University, Ahmedabad, India</h4>
-                    <div class="education-details" id="btech-details">
-                        <div class="education-section-bubble">
-                            <h5>Course Work</h5>
-                            <p>Data Structures and Algorithms, Database Management Systems, Computer Vision, Natural Language Processing</p>
-                        </div>
-                        <div class="education-section-bubble">
-                            <h5>Skills Gained</h5>
-                            <p>Python, SQL, Machine Learning, Neural Networks, Transfer Learning, TensorFlow</p>
-                        </div>
-                    </div>
-                </div>
+                <article class="skill-group skill-pos-3">
+                    <h3>Data and MLOps</h3>
+                    <p>ETL, Feature Engineering, Model Deployment, Experiment Tracking, CI/CD, Docker, AWS SageMaker</p>
+                </article>
+                <article class="skill-group skill-pos-4">
+                    <h3>Databases and BI</h3>
+                    <p>PostgreSQL, MySQL, Snowflake, Tableau, Power BI, AWS QuickSight</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <div class="section-title">
                 <h2>Experience</h2>
-                <p class="section-subtitle">
-                    Building intelligent solutions across diverse domains
-                </p>
             </div>
-            
             <div class="timeline">
-                <div class="timeline-item">
+                <article class="timeline-item">
+                    <div class="timeline-date">Oct 2025 - Present</div>
                     <div class="timeline-content">
-                        <div class="timeline-date">May 2025 - Present</div>
-                        <h3 class="timeline-title">Data Scientist</h3>
-                        <h4 class="timeline-company">Orbe360, California, USA</h4>
-                        <p class="timeline-description">
-                            Developed data pipelines from mined sources and financial document scraping to populate Postgres databases 
-                            and fine-tuned LLMs to build an in-house model. Engineered agentic chatbot workflows integrated into the ORBE platform.
-                        </p>
-                        <div class="skills-container">
-                            <div class="skill-tag">NLP</div>
-                            <div class="skill-tag">RAG Integration</div>
-                            <div class="skill-tag">LLM Fine-Tuning</div>
-                            <div class="skill-tag">Financial Analysis</div>
-                            <div class="skill-tag">ETL Development</div>
+                        <h3>Data Scientist</h3>
+                        <h4>Grazen AI, California, United States</h4>
+                        <ul>
+                            <li>Object detection, vision LMs, OCR — data prep, fine-tuning, deployment.</li>
+                            <li>FastAPI SaaS backend, Docker, RTSP/RTMP streaming, LLM agentic workflows.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-stack">
+                        <h5>Stack</h5>
+                        <div class="exp-stack-icons">
+                            <span><i class="fas fa-eye"></i>CV</span>
+                            <span><i class="fas fa-file-lines"></i>OCR</span>
+                            <span><i class="fas fa-robot"></i>LLM</span>
+                            <span><i class="fas fa-bolt"></i>FastAPI</span>
+                            <span><i class="fab fa-docker"></i>Docker</span>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
+                <article class="timeline-item">
+                    <div class="timeline-date">May 2025 - Dec 2025</div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Apr 2024 - Dec 2024</div>
-                        <h3 class="timeline-title">Research Assistant</h3>
-                        <h4 class="timeline-company">DePaul University, Chicago, USA</h4>
-                        <p class="timeline-description">
-                            Optimized distributed resource allocation using reinforcement learning, enhancing real-time computing 
-                            efficiency for thousands of concurrent users in research-driven networks.
-                        </p>
-                        <div class="skills-container">
-                            <div class="skill-tag">Python</div>
-                            <div class="skill-tag">Reinforcement Learning</div>
-                            <div class="skill-tag">Fog Architecture</div>
-                            <div class="skill-tag">Distributed Computing</div>
-                            <div class="skill-tag">Optimization Algorithms</div>
+                        <h3>Data Scientist</h3>
+                        <h4>Orbe360, California, United States</h4>
+                        <ul>
+                            <li>Data pipelines from mined sources and financial doc scraping into PostgreSQL.</li>
+                            <li>Agentic chatbot workflows on ORBE; fine-tuned LLMs for in-house use.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-stack">
+                        <h5>Stack</h5>
+                        <div class="exp-stack-icons">
+                            <span><i class="fas fa-diagram-project"></i>ETL</span>
+                            <span><i class="fas fa-file-invoice"></i>Doc AI</span>
+                            <span><i class="fas fa-robot"></i>LLM</span>
+                            <span><i class="fas fa-comments"></i>Agentic</span>
+                            <span><i class="fas fa-database"></i>PostgreSQL</span>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
+                <article class="timeline-item">
+                    <div class="timeline-date">Jun 2024 - Aug 2024</div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jun 2024 - Aug 2024</div>
-                        <h3 class="timeline-title">Data Intern - Summer</h3>
-                        <h4 class="timeline-company">IQM Corporation, New York, USA</h4>
-                        <p class="timeline-description">
-                            Built a custom query app using AWS QuickSight; achieved BLEU score of 88+ by refining SQL syntax with machine learning.
-                        </p>
-                        <div class="skills-container">
-                            <div class="skill-tag">AWS (QuickSight)</div>
-                            <div class="skill-tag">RAG Architecture</div>
-                            <div class="skill-tag">Langchain/Langgraph</div>
-                            <div class="skill-tag">Bitbucket</div>
-                            <div class="skill-tag">Tensorflow</div>
+                        <h3>Data Intern</h3>
+                        <h4>IQM Corporation, New York, United States</h4>
+                        <ul>
+                            <li>Query resolver chatbot (AWS QuickSight, LangChain) for non-technical users.</li>
+                            <li>88+ BLEU on SQL generation and retrieval.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-stack">
+                        <h5>Stack</h5>
+                        <div class="exp-stack-icons">
+                            <span><i class="fab fa-aws"></i>QuickSight</span>
+                            <span><i class="fas fa-link"></i>LangChain</span>
+                            <span><i class="fas fa-database"></i>SQL</span>
+                            <span><i class="fas fa-chart-column"></i>BLEU</span>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
+                <article class="timeline-item">
+                    <div class="timeline-date">Apr 2024 - Jun 2024</div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jan 2022 - Aug 2023</div>
-                        <h3 class="timeline-title">Data Scientist</h3>
-                        <h4 class="timeline-company">IQM Corporation, Ahmedabad, India</h4>
-                        <p class="timeline-description">
-                            Mapped 100K+ URL views to user IDs using cosine similarity, deployed BERT-based labeling pipeline, 
-                            and led real-time ad recommendation strategy integration.
-                        </p>
-                        <div class="skills-container">
-                            <div class="skill-tag">NLP</div>
-                            <div class="skill-tag">Python</div>
-                            <div class="skill-tag">Fast APIs</div>
-                            <div class="skill-tag">PyTorch</div>
-                            <div class="skill-tag">Data Visualization</div>
+                        <h3>Research Assistant</h3>
+                        <h4>DePaul University, Illinois, United States</h4>
+                        <ul>
+                            <li>RL-based resource allocation for distributed systems.</li>
+                            <li>Improved throughput for thousands of concurrent connections.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-stack">
+                        <h5>Stack</h5>
+                        <div class="exp-stack-icons">
+                            <span><i class="fas fa-brain"></i>RL</span>
+                            <span><i class="fas fa-network-wired"></i>Distributed</span>
+                            <span><i class="fas fa-gauge-high"></i>Optimization</span>
+                            <span><i class="fab fa-python"></i>Python</span>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">Jan 2022 - Jul 2023</div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <h4>IQM Corporation, Gujarat, India</h4>
+                        <ul>
+                            <li>Cosine similarity to map 100K–150K URL views to viewer IDs.</li>
+                            <li>Keyword APIs + BERT URL classifier (~6.5K URLs / 12h).</li>
+                        </ul>
+                    </div>
+                    <div class="exp-stack">
+                        <h5>Stack</h5>
+                        <div class="exp-stack-icons">
+                            <span><i class="fas fa-bezier-curve"></i>Cosine</span>
+                            <span><i class="fas fa-font"></i>BERT</span>
+                            <span><i class="fas fa-code"></i>APIs</span>
+                            <span><i class="fab fa-python"></i>Python</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>Featured Projects</h2>
-                <p class="section-subtitle">
-                    A glimpse into my technical work
-                </p>
+                <h2>Projects</h2>
             </div>
-            
-            <div class="projects-compact">
-                <div class="project-item-compact">
-                    <div class="project-image-small">
-                        <img src="images/computer_vision_img.png" alt="Vision-Crafter Project">
-                    </div>
-                    <div class="project-details">
-                        <h3>Vision-Crafter</h3>
-                        <p>Transfer learning for neural style transfer and computer vision applications</p>
-                        <div class="project-tech">
-                            <span>PyTorch</span>
-                            <span>Computer Vision</span>
-                            <span>Transfer Learning</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item-compact">
-                    <div class="project-image-small">
-                        <img src="images/qa-youtube.png" alt="VidQuery Project">
-                    </div>
-                    <div class="project-details">
-                        <h3>VidQuery</h3>
-                        <p>Streamlit app for YouTube video Q&A using OpenAI GPT-3.5</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/computer_vision_img.png" alt="YouTube QA System project">
+                    <div class="project-body">
+                        <h3>YouTube QA System</h3>
+                        <p>
+                            Streamlit app: GPT-3.5 + RAG, LangChain tool-calling, FAISS search. Q&A over YouTube transcripts with multilingual support.
+                        </p>
                         <div class="project-tech">
                             <span>Streamlit</span>
-                            <span>OpenAI</span>
-                            <span>NLP</span>
+                            <span>RAG</span>
+                            <span>LangChain</span>
+                            <span>FAISS</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-item-compact">
-                    <div class="project-image-small">
-                        <img src="images/molecular_image.png" alt="Molecular Communication Project">
-                    </div>
-                    <div class="project-details">
-                        <h3>Molecular-Communication</h3>
-                        <p>ANN and LSTM models for binary code prediction with 99.27% accuracy</p>
+                </article>
+                <article class="project-card">
+                    <img src="images/molecular_image.png" alt="Molecular Communication project">
+                    <div class="project-body">
+                        <h3>Molecular Communication</h3>
+                        <p>
+                            ANN and LSTM for binary code prediction in fluid medium. 99.27% accuracy (LSTM).
+                        </p>
                         <div class="project-tech">
                             <span>LSTM</span>
+                            <span>ANN</span>
                             <span>Deep Learning</span>
                             <span>TensorFlow</span>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://github.com/yashpatel301" class="btn btn-secondary" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i>
-                    View More on GitHub
-                </a>
+            <div class="section-actions">
+                <a href="https://github.com/yashpatel301" class="btn btn-secondary" target="_blank" rel="noopener">View More on GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education and Certifications</h2>
+            </div>
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>Master of Science in Computer Science</h3>
+                    <h4>DePaul University, Chicago, IL, USA</h4>
+                    <p>Sep 2023 – Mar 2025</p>
+                    <p>ML, AI, Data Mining, Database Systems</p>
+                </article>
+                <article class="education-card">
+                    <h3>Bachelor of Information and Communication Technology</h3>
+                    <h4>Ahmedabad University, Ahmedabad, India</h4>
+                    <p>Aug 2018 – May 2022</p>
+                    <p>ML, Probabilistic Modelling, NLP, Computer Vision, Statistics</p>
+                </article>
+            </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="cert-grid">
+                    <button class="cert-card" type="button" data-cert-image="images/Machine Learning Certificate.png" data-cert-title="Machine Learning - Stanford University" data-cert-source="https://www.coursera.org/account/accomplishments/verify/V2PUWSKWHYXX?utm_source=android&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                        <img src="images/Machine Learning Certificate.png" alt="Machine Learning - Stanford University certificate">
+                        <p>Machine Learning - Stanford University</p>
+                    </button>
+                    <button class="cert-card" type="button" data-cert-image="images/How Google Does ML Certi.png" data-cert-title="How Google Does Machine Learning - Coursera" data-cert-source="https://www.coursera.org/account/accomplishments/verify/A36HWMSYDTH4?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                        <img src="images/How Google Does ML Certi.png" alt="How Google Does Machine Learning certificate">
+                        <p>How Google Does Machine Learning - Coursera</p>
+                    </button>
+                    <button class="cert-card" type="button" data-cert-image="images/MAD certi.png" data-cert-title="Chatbot Workshop - The MAD" data-cert-source="">
+                        <img src="images/MAD certi.png" alt="Chatbot Workshop - The MAD certificate">
+                        <p>Chatbot Workshop - The MAD</p>
+                    </button>
+                    <button class="cert-card" type="button" data-cert-image="images/Google Cloud Big Data certi.png" data-cert-title="Google Cloud Big Data and ML Fundamentals" data-cert-source="https://www.coursera.org/account/accomplishments/verify/YUYSH4XNAXS3?utm_source=android&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+                        <img src="images/Google Cloud Big Data certi.png" alt="Google Cloud Big Data and Machine Learning Fundamentals certificate">
+                        <p>Google Cloud Big Data and ML Fundamentals</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p class="section-subtitle">
-                    Let's collaborate and build something amazing together
-                </p>
+                <h2>Contact</h2>
             </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>yasharvindpatel2000@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (224) 539-6564</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Milpitas, CA, USA</span>
-                    </div>
-                    
+                    <h3>Let us connect</h3>
+                    <p><i class="fas fa-envelope"></i> yasharvindpatel2000@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (224) 539-6564</p>
+                    <p><i class="fas fa-location-dot"></i> Milpitas, CA, USA</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yashpatel0301/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/yashpatel301" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.kaggle.com/yashp301" class="social-link" target="_blank" rel="noopener" aria-label="Kaggle">
-                            <i class="fab fa-kaggle"></i>
-                        </a>
-                        <a href="https://www.instagram.com/yash_patel3.01/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    
-                    <div style="margin-top: 2rem;">
-                        <a href="images/Yash Patel Resume.pdf" class="btn btn-secondary" download>
-                            <i class="fas fa-download"></i>
-                            Download Resume
-                        </a>
+                        <a href="https://www.linkedin.com/in/yashpatel0301/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/yashpatel301" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.kaggle.com/yashp301" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
                     </div>
                 </div>
-                
                 <div class="contact-form">
                     <form name="submit-to-google-sheet" id="contact-form">
                         <div class="form-group">
@@ -354,26 +339,36 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project or just say hello!" required></textarea>
+                            <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project or role." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
-                    <div id="form-message" style="margin-top: 1rem; text-align: center;"></div>
+                    <div id="form-message"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer style="background: var(--bg-secondary); padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-glass);">
+    <footer>
         <div class="container">
-            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                © 2024 Yash Patel. Built with passion and modern web technologies.
-            </p>
+            <p>© 2026 Yash Patel.</p>
         </div>
     </footer>
+
+    <div id="cert-modal" class="cert-modal" aria-hidden="true">
+        <div class="cert-modal-backdrop" data-close-cert-modal></div>
+        <div class="cert-modal-card" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+            <button class="cert-modal-close" id="cert-modal-close" aria-label="Close certificate preview">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="cert-modal-image" src="" alt="Certificate preview">
+            <h4 id="cert-modal-title"></h4>
+            <p id="cert-modal-source-line">
+                Source:
+                <a id="cert-modal-source" href="#" target="_blank" rel="noopener"></a>
+                <span id="cert-modal-no-source">Pending</span>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
