@@ -35,7 +35,6 @@
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-about-wrap">
-                    <p class="about-label">ABOUT ME</p>
                     <div class="intro-about">
                         <h2 class="about-heading">Hi, I'm Yash, a curious mind fueled by data, driven by impact</h2>
                         <p>
@@ -314,34 +313,70 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact</h2>
+                <p class="section-lead">Let’s connect, collaborate or a quick hello</p>
             </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let us connect</h3>
-                    <p><i class="fas fa-envelope"></i> yasharvindpatel2000@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (224) 539-6564</p>
-                    <p><i class="fas fa-location-dot"></i> Milpitas, CA, USA</p>
+                <ul class="contact-methods">
+                    <li>
+                        <div class="contact-method contact-method--static" role="group" aria-label="Phone">
+                            <span class="contact-method-icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+                            <span class="contact-method-meta">
+                                <span class="contact-method-label">Phone</span>
+                                <span class="contact-method-value">+1 (224) 539-6564</span>
+                            </span>
+                            <span class="contact-method-hint">Best reached by email</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="contact-method" href="mailto:yasharvindpatel2000@gmail.com">
+                            <span class="contact-method-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                            <span class="contact-method-meta">
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">yasharvindpatel2000@gmail.com</span>
+                            </span>
+                            <span class="contact-method-hint">Compose email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-method" href="https://www.google.com/maps/search/?api=1&query=Milpitas%2C+CA+USA" target="_blank" rel="noopener">
+                            <span class="contact-method-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></span>
+                            <span class="contact-method-meta">
+                                <span class="contact-method-label">Location</span>
+                                <span class="contact-method-value">Milpitas, CA, USA</span>
+                            </span>
+                            <span class="contact-method-hint">Open map <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="contact-social">
+                    <p class="contact-social-label">Online</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yashpatel0301/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/yashpatel301" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.kaggle.com/yashp301" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                        <a href="https://www.linkedin.com/in/yashpatel0301/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i><span class="social-name">LinkedIn</span></a>
+                        <a href="https://github.com/yashpatel301" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i><span class="social-name">GitHub</span></a>
+                        <a href="https://www.kaggle.com/yashp301" target="_blank" rel="noopener" aria-label="Kaggle profile"><i class="fab fa-kaggle"></i><span class="social-name">Kaggle</span></a>
                     </div>
                 </div>
-                <div class="contact-form">
+
+                <div class="contact-form-block">
+                    <h3 class="contact-form-title">Send a message</h3>
+                    <p class="contact-form-desc">Do you think better AI comes from better models or better systems built around imperfect ones?</p>
                     <form name="submit-to-google-sheet" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="Name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="Email" placeholder="your.email@example.com" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="Name" placeholder="Your name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="Email" placeholder="you@example.com" required autocomplete="email">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project or role." required></textarea>
+                            <textarea id="message" name="Message" rows="5" placeholder="What’s on your mind?" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-contact-submit">Send message</button>
                     </form>
                     <div id="form-message"></div>
                 </div>
