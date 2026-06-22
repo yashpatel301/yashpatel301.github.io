@@ -12,6 +12,10 @@
 <body>
     <nav id="navbar">
         <div class="nav-container">
+            <a href="#header" class="nav-brand" aria-label="Yash Patel home">
+                <span class="nav-brand-mark">YP</span>
+                <span class="nav-brand-text">Yash Patel</span>
+            </a>
             <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars"></i>
             </button>
@@ -32,35 +36,61 @@
     </nav>
 
     <section id="header" class="intro-section">
-        <div class="container">
+        <div class="page-layout">
             <div class="intro-grid">
                 <div class="intro-about-wrap">
                     <div class="intro-about">
-                        <h2 class="about-heading">Hi, I'm Yash, a curious mind fueled by data, driven by impact</h2>
+                        <span class="eyebrow">Skill Snapshot</span>
+                        <h2 class="about-heading">Turning data, models, and systems into practical AI products.</h2>
                         <p>
-                            Over the last few years, I have moved through quite a spectrum. From corporate teams with structure, scrappy startup days where "everything" meant everything and research labs chasing the next algorithm. Somewhere in between, I have been the data guy, the ML guy and sometimes even the "make-it-work" DevOps guy.
+                            I work across the full applied AI stack: extracting signal from messy data, building ML and LLM workflows, deploying backend services, and making the results useful for people.
                         </p>
-                        <p>
-                            I have seen the arc of this field firsthand, from training traditional deep learning models, to experimenting with transfer learning and now shaping things with LLMs and agentic workflows. Each phase has been less about chasing trends and more about learning. For me, the fun is in that mix: figuring out how new advancements can be foundations for solving current industrial problems, while keeping the process as practical (and human) as possible.
-                        </p>
+                        <div class="capability-grid" aria-label="Applied AI capabilities">
+                            <article class="capability-card">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning</span>
+                            </article>
+                            <article class="capability-card">
+                                <i class="fas fa-robot"></i>
+                                <span>LLM Workflows</span>
+                            </article>
+                            <article class="capability-card">
+                                <i class="fas fa-eye"></i>
+                                <span>Computer Vision</span>
+                            </article>
+                            <article class="capability-card">
+                                <i class="fas fa-database"></i>
+                                <span>Data Systems</span>
+                            </article>
+                            <article class="capability-card">
+                                <i class="fas fa-server"></i>
+                                <span>Backend APIs</span>
+                            </article>
+                            <article class="capability-card">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </article>
+                        </div>
                     </div>
                 </div>
                 <div class="intro-primary">
+                    <p class="hero-status"><span></span> Applied AI · ML Systems · Data Products</p>
                     <div class="intro-photo-wrap">
                         <img src="images/background.JPG" alt="Yash Patel" class="intro-photo">
                     </div>
                     <h1 class="intro-name">Yash Patel</h1>
                     <p class="hero-kicker">Data Scientist</p>
                     <p class="intro-summary">
-                        Machine learning · NLP · Generative AI · Language Models · Computer Vision · Statistical Modeling · Efficient System Design
+                        Building intelligent systems with machine learning, NLP, generative AI, computer vision, statistical modeling, and efficient system design.
                     </p>
                     <div class="hero-metadata">
-                        <span><i class="fas fa-location-dot"></i> California, USA</span>
-                        <span><i class="fas fa-handshake"></i> let's collaborate</span>
+                        <span><i class="fas fa-location-dot"></i> Bay Area, California</span>
+                        <span><i class="fas fa-layer-group"></i> end-to-end AI stack</span>
                     </div>
                     <div class="hero-cta">
-                        <a href="#experience" class="btn btn-primary">View Experience</a>
-                        <a href="images/Yash Patel Resume.docx" class="btn btn-secondary" download>Download Resume</a>
+                        <a href="#skills" class="btn btn-secondary">Explore Skills</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="images/Yash Patel Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -68,58 +98,82 @@
     </section>
 
     <section id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>Core Skills</h2>
-            </div>
-            <div class="skills-showcase">
-                <article class="skill-group skill-pos-1">
-                    <h3>Programming</h3>
-                    <p>Python, R, SQL, Java</p>
-                </article>
-                <article class="skill-group skill-pos-2">
-                    <h3>ML and AI</h3>
-                    <p>PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, LangGraph</p>
-                </article>
-                <div class="skills-cloud" aria-label="Floating AI stack cloud">
-                    <span class="cloud-tag c1"><i class="fab fa-python"></i>Python</span>
-                    <span class="cloud-tag c2"><i class="fas fa-brain"></i>TensorFlow</span>
-                    <span class="cloud-tag c3"><i class="fas fa-fire"></i>PyTorch</span>
-                    <span class="cloud-tag c4"><i class="fas fa-database"></i>SQL</span>
-                    <span class="cloud-tag c5"><i class="fab fa-java"></i>Java</span>
-                    <span class="cloud-tag c6"><i class="fas fa-link"></i>LangChain</span>
-                    <span class="cloud-tag c7"><i class="fab fa-aws"></i>AWS</span>
-                    <span class="cloud-tag c8"><i class="fab fa-docker"></i>Docker</span>
-                    <span class="cloud-tag c9"><i class="fas fa-server"></i>PostgreSQL</span>
-                    <span class="cloud-tag c10"><i class="fas fa-chart-line"></i>Tableau</span>
-                    <span class="cloud-tag c11"><i class="fas fa-snowflake"></i>Snowflake</span>
-                    <span class="cloud-tag c12"><i class="fas fa-robot"></i>NLP</span>
+        <div class="skills-layout">
+            <aside class="skills-sidebar">
+                <h2 class="skills-heading">Skill Stack</h2>
+                <nav class="skills-domains" aria-label="Skill areas">
+                    <button type="button" class="skills-domain" data-root="python">
+                        <span class="skills-domain-icon"><i class="fas fa-code"></i></span>
+                        <span class="skills-domain-text">
+                            <strong>Programming</strong>
+                            <span>Python, R, SQL, Java</span>
+                        </span>
+                    </button>
+                    <button type="button" class="skills-domain" data-root="nlp">
+                        <span class="skills-domain-icon"><i class="fas fa-brain"></i></span>
+                        <span class="skills-domain-text">
+                            <strong>ML &amp; AI</strong>
+                            <span>PyTorch, LangChain, Hugging Face</span>
+                        </span>
+                    </button>
+                    <button type="button" class="skills-domain" data-root="docker">
+                        <span class="skills-domain-icon"><i class="fas fa-gears"></i></span>
+                        <span class="skills-domain-text">
+                            <strong>Data &amp; MLOps</strong>
+                            <span>ETL, Docker, AWS, deployment</span>
+                        </span>
+                    </button>
+                    <button type="button" class="skills-domain" data-root="sql">
+                        <span class="skills-domain-icon"><i class="fas fa-chart-pie"></i></span>
+                        <span class="skills-domain-text">
+                            <strong>Databases &amp; BI</strong>
+                            <span>PostgreSQL, Snowflake, Tableau</span>
+                        </span>
+                    </button>
+                </nav>
+            </aside>
+            <div class="skills-main">
+                <div class="skills-explorer-wrap" aria-label="Interactive skill map">
+                    <div class="skills-explorer" id="skills-explorer">
+                        <svg class="skill-lines" id="skill-lines" aria-hidden="true"></svg>
+                        <div class="skill-tree" id="skill-tree"></div>
+                    </div>
+                    <div class="skill-explorer-footer">
+                        <p class="skill-status" id="skill-status" aria-live="polite">Click a skill to start. Work details show up on the right.</p>
+                        <button type="button" class="skill-reset" id="skill-reset" hidden>Reset map</button>
+                    </div>
                 </div>
-                <article class="skill-group skill-pos-3">
-                    <h3>Data and MLOps</h3>
-                    <p>ETL, Feature Engineering, Model Deployment, Experiment Tracking, CI/CD, Docker, AWS SageMaker</p>
-                </article>
-                <article class="skill-group skill-pos-4">
-                    <h3>Databases and BI</h3>
-                    <p>PostgreSQL, MySQL, Snowflake, Tableau, Power BI, AWS QuickSight</p>
-                </article>
+                <aside class="skill-proof-panel" id="skill-proof-panel" aria-live="polite">
+                    <div class="skill-proof-placeholder">
+                        <span class="skill-proof-placeholder-icon" aria-hidden="true"><i class="fas fa-route"></i></span>
+                        <h3>Where did I pick this up?</h3>
+                        <p>Click a skill on the map. If it ties to a job, project, or class, you'll see it here.</p>
+                        <ul class="skill-proof-hints">
+                            <li><i class="fas fa-briefcase"></i> Experience</li>
+                            <li><i class="fas fa-folder-open"></i> Projects</li>
+                            <li><i class="fas fa-graduation-cap"></i> Education</li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
 
     <section id="experience">
-        <div class="container">
-            <div class="section-title">
+        <div class="page-layout">
+            <header class="page-heading">
                 <h2>Experience</h2>
-            </div>
+                <p class="page-heading-note">Roles across CV, LLMs, data pipelines, and research.</p>
+            </header>
+            <div class="page-body">
             <div class="timeline">
-                <article class="timeline-item">
+                <article class="timeline-item" id="exp-grazen">
                     <div class="timeline-date">Oct 2025 - Present</div>
                     <div class="timeline-content">
                         <h3>Data Scientist</h3>
-                        <h4>Grazen AI, California, United States</h4>
+                        <h4>Grazen AI, Bay Area, California</h4>
                         <ul>
-                            <li>Object detection, vision LMs, OCR — data prep, fine-tuning, deployment.</li>
+                            <li>Object detection, vision LMs, and OCR: data prep, fine-tuning, deployment.</li>
                             <li>FastAPI SaaS backend, Docker, RTSP/RTMP streaming, LLM agentic workflows.</li>
                         </ul>
                     </div>
@@ -135,11 +189,11 @@
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="exp-orbe360">
                     <div class="timeline-date">May 2025 - Dec 2025</div>
                     <div class="timeline-content">
                         <h3>Data Scientist</h3>
-                        <h4>Orbe360, California, United States</h4>
+                        <h4>Orbe360, Bay Area, California</h4>
                         <ul>
                             <li>Data pipelines from mined sources and financial doc scraping into PostgreSQL.</li>
                             <li>Agentic chatbot workflows on ORBE; fine-tuned LLMs for in-house use.</li>
@@ -157,7 +211,7 @@
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="exp-iqm-intern">
                     <div class="timeline-date">Jun 2024 - Aug 2024</div>
                     <div class="timeline-content">
                         <h3>Data Intern</h3>
@@ -178,7 +232,7 @@
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="exp-depaul">
                     <div class="timeline-date">Apr 2024 - Jun 2024</div>
                     <div class="timeline-content">
                         <h3>Research Assistant</h3>
@@ -199,13 +253,13 @@
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="exp-iqm">
                     <div class="timeline-date">Jan 2022 - Jul 2023</div>
                     <div class="timeline-content">
                         <h3>Data Scientist</h3>
                         <h4>IQM Corporation, Gujarat, India</h4>
                         <ul>
-                            <li>Cosine similarity to map 100K–150K URL views to viewer IDs.</li>
+                            <li>Cosine similarity to map 100K-150K URL views to viewer IDs.</li>
                             <li>Keyword APIs + BERT URL classifier (~6.5K URLs / 12h).</li>
                         </ul>
                     </div>
@@ -220,16 +274,19 @@
                     </div>
                 </article>
             </div>
+            </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="container">
-            <div class="section-title">
+        <div class="page-layout">
+            <header class="page-heading">
                 <h2>Projects</h2>
-            </div>
+                <p class="page-heading-note">Side builds and research that shaped how I work.</p>
+            </header>
+            <div class="page-body">
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card" id="proj-youtube-qa">
                     <img src="images/computer_vision_img.png" alt="YouTube QA System project">
                     <div class="project-body">
                         <h3>YouTube QA System</h3>
@@ -244,7 +301,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project-card">
+                <article class="project-card" id="proj-molecular">
                     <img src="images/molecular_image.png" alt="Molecular Communication project">
                     <div class="project-body">
                         <h3>Molecular Communication</h3>
@@ -263,25 +320,28 @@
             <div class="section-actions">
                 <a href="https://github.com/yashpatel301" class="btn btn-secondary" target="_blank" rel="noopener">View More on GitHub</a>
             </div>
+            </div>
         </div>
     </section>
 
     <section id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2>Education and Certifications</h2>
-            </div>
+        <div class="page-layout">
+            <header class="page-heading">
+                <h2>Education</h2>
+                <p class="page-heading-note">Degrees and certifications.</p>
+            </header>
+            <div class="page-body">
             <div class="education-grid">
                 <article class="education-card">
                     <h3>Master of Science in Computer Science</h3>
                     <h4>DePaul University, Chicago, IL, USA</h4>
-                    <p>Sep 2023 – Mar 2025</p>
+                    <p>Sep 2023 - Mar 2025</p>
                     <p>ML, AI, Data Mining, Database Systems</p>
                 </article>
                 <article class="education-card">
                     <h3>Bachelor of Information and Communication Technology</h3>
                     <h4>Ahmedabad University, Ahmedabad, India</h4>
-                    <p>Aug 2018 – May 2022</p>
+                    <p>Aug 2018 - May 2022</p>
                     <p>ML, Probabilistic Modelling, NLP, Computer Vision, Statistics</p>
                 </article>
             </div>
@@ -306,16 +366,18 @@
                     </button>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <div class="section-title">
+        <div class="page-layout">
+            <header class="page-heading">
                 <h2>Contact</h2>
-                <p class="section-lead">Let’s connect, collaborate or a quick hello</p>
-            </div>
-            <div class="contact-content">
+                <p class="page-heading-note">Email is the best way to reach me.</p>
+            </header>
+            <div class="page-body contact-page-body">
+                <div class="contact-side">
                 <ul class="contact-methods">
                     <li>
                         <div class="contact-method contact-method--static" role="group" aria-label="Phone">
@@ -338,11 +400,11 @@
                         </a>
                     </li>
                     <li>
-                        <a class="contact-method" href="https://www.google.com/maps/search/?api=1&query=Milpitas%2C+CA+USA" target="_blank" rel="noopener">
+                        <a class="contact-method" href="https://www.google.com/maps/search/?api=1&query=Bay+Area%2C+California" target="_blank" rel="noopener">
                             <span class="contact-method-icon" aria-hidden="true"><i class="fas fa-location-dot"></i></span>
                             <span class="contact-method-meta">
                                 <span class="contact-method-label">Location</span>
-                                <span class="contact-method-value">Milpitas, CA, USA</span>
+                                <span class="contact-method-value">Bay Area, California</span>
                             </span>
                             <span class="contact-method-hint">Open map <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
                         </a>
@@ -356,6 +418,7 @@
                         <a href="https://github.com/yashpatel301" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i><span class="social-name">GitHub</span></a>
                         <a href="https://www.kaggle.com/yashp301" target="_blank" rel="noopener" aria-label="Kaggle profile"><i class="fab fa-kaggle"></i><span class="social-name">Kaggle</span></a>
                     </div>
+                </div>
                 </div>
 
                 <div class="contact-form-block">
@@ -385,8 +448,11 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Yash Patel.</p>
+        <div class="page-layout page-layout--footer">
+            <div class="page-heading page-heading--footer" aria-hidden="true"></div>
+            <div class="page-body">
+                <p>© 2026 Yash Patel.</p>
+            </div>
         </div>
     </footer>
 
